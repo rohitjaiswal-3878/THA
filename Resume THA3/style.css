@@ -1,0 +1,71 @@
+h1{
+    background-color: white;
+    color:black;
+    padding: 8px;
+    padding-left: 30px;
+    padding-right: 32px;
+    width: 162px;
+    text-align: center;
+}
+.headingdiv{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+
+}
+.content{
+    width: 55vw;
+    height: 85vh;
+    border: black solid 3px;
+    position: absolute;
+    top: 71px
+}
+.parentcontent{
+    display: flex;
+    justify-content: center;
+   
+}
+#personal{
+    padding-left: 48px;
+    padding-top: 39px;
+}
+p{
+    margin-left: 40px;
+    margin-top: -13px;
+    font-style: italic;
+
+}
+#honor{
+    padding-left: 48px;
+    padding-top: 3px;
+}
+#contact{
+    padding-left: 48px;
+    padding-top: 3px;
+}
+#personalinterest{
+    padding-left: 48px;
+    padding-top: 3px;
+
+}
+#Work{
+    position: absolute;
+    top: 38px;
+    left: 424px;
+}
+#acounts{
+    position:absolute;
+    left: 424px;
+    top:150px;
+}
+#acount{
+    position: absolute;
+    left:424px;
+    top:300px;
+}
+#small{
+    position: relative;
+    top: -14px
+}
+
