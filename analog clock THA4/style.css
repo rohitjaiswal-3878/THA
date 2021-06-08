@@ -1,0 +1,130 @@
+body{
+    text-align: center;
+}
+.clock{
+    width:480px;
+    height:460px;
+    background-color: blueviolet;
+    display: inline-block;
+    border : solid black 5px;
+    padding:30px;
+    border-radius: 50%;
+}
+.sec,.min,.hour{
+    line-height: 45px;
+    position: relative;
+    transform-origin: bottom;
+}
+.sec{
+    height: 240px;
+    width:5px;
+    background: black;
+    left:245px;
+    z-index: 3;
+    animation: sec_anim 60s linear infinite;
+}
+.min{
+    height: 240px;
+    width:10px;
+    background:burlywood;
+    left:245.5px;
+    top:-240px;
+    z-index: 2;
+    animation: min_anim 600s linear infinite;
+}
+.hour{
+    height: 200px;
+    width:14px;
+    background:crimson;
+    left:245px;
+    top:-440px;
+    z-index: 1;
+    animation: hour_anim 6000s linear infinite;
+}
+@keyframes sec_anim 
+{
+    from{transform:rotatez(0deg);}
+    to{transform:rotatez(360deg);}
+}
+@keyframes min_anim 
+{
+    from{transform:rotatez(0deg);}
+    to{transform:rotatez(360deg);}
+}
+@keyframes hour_anim 
+{
+    from{transform:rotatez(0deg);}
+    to{transform:rotatez(360deg);}
+}
+
+.one,.two,.three,.four,.five,.six,.seven,.eight,.nine,.ten,.eleven,.twelve{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 3.7em;
+    position:relative;
+    color: black;
+    z-index: 1;
+    text-shadow: 0 0 10px white;
+}
+
+.one{
+    top: -648px;
+    left: 123px;
+
+}
+.two{
+    top: -629px;
+    left: 192px;
+
+}
+.three{
+    top: -603px;
+    left: 228px;
+
+}
+.four{
+    top: -564px;
+    left: 203px;
+
+}
+.five{
+    top:-552px;
+    left: 116px;
+
+}
+.six{
+    top: -580px;
+    
+
+}
+.seven{
+    top: -691px;
+    left: -116px;
+
+}
+.eight{
+    top: -840px;
+    left: -203px;
+
+}
+.nine{
+    top: -1016px;
+    left: -238px;
+
+}
+.ten{
+    top: -1181px;
+    left: -192px;
+
+}
+.eleven{
+    top: -1338px;
+    left: -123px;
+
+}
+.twelve{
+    top:-1450px;
+
+}
+
+
+
