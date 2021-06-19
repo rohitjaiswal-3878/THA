@@ -26,8 +26,9 @@ console.log(array_Clone([1, 2, [4, 0]]));
 
 //write a program to get the first element of the array
 
-function first(){
-    return arguments[0];
+function first(arr,n=0){
+    var res=arr.slice(0,n);
+    return res;
 }
 console.log(first([7, 9, 0, -2]));
 console.log(first([],3));
