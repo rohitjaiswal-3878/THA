@@ -1,0 +1,41 @@
+.box{
+    width: 260px;
+    height: 120px;
+    background-color:brown;
+}
+.container{
+    display: inline-block;
+    background-color: #c4a0a0;
+    margin-top:19px;
+    
+}
+.outer{
+    text-align: center;
+    margin: auto;
+    background-color: rgb(199, 99, 116);
+    height: 100vh;
+}
+.txt{
+    display: inline-block;
+    position: relative;
+    top: -4px;
+    font-size: 46px;
+    font-family: monospace;
+}
+.line{
+    width: 468px;
+    display: inline-block;
+    height: 59px;
+    background-color: black;
+    border-top-left-radius: 50px;
+    border-top-right-radius:50px ;
+}
+.outerline{
+    text-align: center;
+    margin:auto;
+}
+.boxclick{
+    width: 260px;
+    height: 120px;
+    background-color:rgb(78, 56, 56);
+}
