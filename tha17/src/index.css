@@ -1,0 +1,47 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+.App{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+.container{
+  margin: auto;
+  text-align: center;
+}
+.container .new{
+  font-size: 30px;
+  margin-bottom: 20px;
+
+}
+
+.box{
+  width: 400px;
+  height: 400px;
+  box-shadow: 5px 4px 10px black;
+  text-align: justify;
+  overflow: auto;
+}
+.cards{
+  width: 360px;
+  height: 100px;
+  background-color: rgba(137, 192, 82, 0.931);
+  margin: 10px auto;
+  border-radius: 10px ;
+  box-shadow: 5px 3px 10px black;
+  
+}
+.cards h1{
+  padding-top: 6px;
+  margin-left: 10px;
+  font-family: 'Times New Roman', Times, serif;
+  text-decoration: underline;
+}
+.cards p{
+  margin-left: 10px;
+  padding-top: 25px;
+  font-size: 20px;
+}
