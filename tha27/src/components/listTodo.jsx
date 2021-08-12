@@ -7,25 +7,25 @@ const ListTodo = () => {
     const dispatch = useDispatch();
     const todos = useSelector(state => state.todo);
     console.log(todos)
-    return (
-        <div className="list-todo-container">
+    return (<>
             {todos.map((item, index) => (
                 <div className="items" key={index}>
-                    {(item.done === true) ? <div style={{ textDecoration: 'line-through', color: 'red' }}>{item.title}</div> :
-                        <div style={{ textDecoration: 'none', color: 'black' }}>{item.title}</div>}
-                    <button onClick={() => {
+                    {(item.done === true) ? <div style={{ textDecoration: 'line-through', color: 'red',display:"inline-block"}}>{item.title}</div> :
+                        <div style={{ textDecoration: 'none', color: 'black', display:"inline-block"}}>{item.title}</div>}
+                    <button style={{width:"50px",height:"20px",margin:"10px"}} onClick={() => {
                         dispatch(deleteItem(index));
                     }}>Delete</button>
-                    <div className="doneBtn">
+                    <div className="doneBtn" style={{display:"inline-block"}}>
                         {(item.done === true) ?
-                            <button onClick={() => dispatch(doneItem({ title: item.title, done: false, index: index }))}>UnDone</button> :
-                            <button onClick={() => dispatch(doneItem({ title: item.title, done: true, index: index }))}>Done</button>
+                            <button style={{width:"50px",height:"20px"}} onClick={() => dispatch(doneItem({ title: item.title, done: false, index: index }))}>UnDone</button> :
+                            <button style={{width:"50px",height:"20px"}} onClick={() => dispatch(doneItem({ title: item.title, done: true, index: index }))}>Done</button>
                         }
                     </div>
                 </div>
 
             ))}
-        </div>
+            </>
+        
     )
 
 }
