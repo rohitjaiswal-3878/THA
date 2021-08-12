@@ -16,6 +16,7 @@ const App = () => {
       setLoading("");
     }, 1000);
   }, []);
+  console.log(loading);
 
   return (
     <Router className="main">
