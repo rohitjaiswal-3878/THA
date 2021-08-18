@@ -1,0 +1,22 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.App{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.App *{
+  padding: 10px;
+}
+.App.counter{
+  font-size: 1.5rem;
+}
+.App button{
+  font-size: 1.5rem;
+  padding:5px;
+}
